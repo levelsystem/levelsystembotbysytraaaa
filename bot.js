@@ -27,7 +27,7 @@ client.on('ready', () => {
   console.log('')
 });
 
-hero.on('guildMemberAdd',async member => {
+client.on('guildMemberAdd',async member => {
   const Canvas = require('canvas');
   const jimp = require('jimp');
   const w = ['./welcome_4.png'];
@@ -79,7 +79,7 @@ hero.on('guildMemberAdd',async member => {
           ctx.clip();
           ctx.drawImage(ava, 36, 21, 260, 260);
            
-          const c = hero.channels.get("477226525612048394");
+          const c = client.channels.get("477226525612048394");
           c.sendFile(canvas.toBuffer());
  
 });

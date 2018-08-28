@@ -79,7 +79,7 @@ client.on('guildMemberAdd',async member => {
           ctx.clip();
           ctx.drawImage(ava, 36, 21, 260, 260);
            
-          const c = client.channels.get("477226525612048394");
+          const c = client.channels.get("482938718261346304");
           c.sendFile(canvas.toBuffer());
  
 });

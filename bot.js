@@ -330,7 +330,7 @@ client.on("guildMemberAdd", member => {
                               
                               //NAMEً
                               ctx.font = '30px Arial';
-                              ctx.fontSize = '28px';
+                              ctx.fontSize = '19px';
                               ctx.fillStyle = "#FFFFFF";
       ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
       

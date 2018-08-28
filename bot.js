@@ -1,14 +1,10 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594','350408440566382592'];
+const client = new Discord.Client(); 
 var prefix = "!";
-const adminprefix = "!"
-const db = require('quick.db');
-const client = new Discord.Client();   
 const fs = require("fs"); 
 const canvas = require("canvas");
 const moment = require("moment");  
 const jimp = require('jimp');   
-const figlet = require('figlet');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
